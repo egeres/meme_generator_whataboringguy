@@ -1,0 +1,23 @@
+[project]
+name = "meme-generator-whataboringguy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pillow>=11.0.0",
+    "rich>=13.9.4",
+]
+
+[project.scripts]
+hello = "meme_generator_whataboringguy:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ruff>=0.8.0",
+    "uv>=0.5.4",
+]
